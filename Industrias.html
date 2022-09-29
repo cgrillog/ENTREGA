@@ -1,172 +1,61 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="css/Index.css" />
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
-        <style>
-        * body{
-            margin: 0;
-            padding: 0;
-            background-color: #e8e8f8;
-         }
-         header {
-             display: flex;
-             flex-direction: row;
-             align-items: center;
-             justify-content: flex-end;
-             background-color: rgb(0, 0, 0);
-             font-family: arial;
-             height: 40px;
-             padding: 10px;          
-         }
-
-         header p {
-             margin-right: auto;
-         }
-
-         header ul {
-             display: flex;
-             gap: 10px;
-             list-style: none;         
-         }
-
-
-         header ul li {
-            text-align: center;
-         }
-
-         header ul li a {
-            
-             display: block;
-             padding: 5px;
-             font-size: 12px;
-             color: rgb(255, 255, 255);
-             text-decoration: none;
-             transition: all 0.6s;
-             border-radius: 8px;
-         }
-
-         header ul li a:hover {
-           background-color: rgb(255, 255, 255);
-           color: rgb(7, 7, 7);
-         }
-         main{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 20px;
-            min-height: 100%;
-         }
-         main div{
-            display: flex;
-            flex-direction: row;
-         }
-         .titulo{
-          font-weight: bold;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-         }      
-         section{
-            display: flex;
-            flex-direction: row;
-            border-radius: 8px;
-            margin-top: 20px;
-            margin-left: 20px;
-           align-items: center;
-           border: 2px solid #000000;
-           padding: 10px;
-           background-color: rgba(183, 177, 232, 0.649);
-           width: 400px;
-         }
-
-         .logo {
-            margin-right: 20px;
-            border-radius: 10px;
-         }
-
-         .footer-basic {
-               padding:40px 0;
-               background-color:#ffffff;
-               color:#48494b;
-               margin-bottom: 0px;
-               height: 100px;
-          }
-
-.footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
-}
-
-.footer-basic .social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:inherit;
-  opacity:0.75;
-}
-
-.footer-basic .social > a:hover {
-  opacity:0.9;
-}
-
-.footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
-}
-         
-    </style>
+    <title>industrias</title>
 </head>
 
 <body>
 
      <header class="topnav">
-         <p> <img height="100px" src=https://media-exp1.licdn.com/dms/image/C4E0BAQEXyKoIOlbqGQ/company-logo_200_200/0/1538360888029?e=2147483647&v=beta&t=6smKuiXa9r6rYe0UXyKQ2Gg8ztMp1JuFr9rnBo0KuB0><p>
-         <ul> 
-             <li><a href="Index.html">Inicio</a></li>
-             <li><a href="Servicios.html">Servicios</a></li>
-             <li><a href="Industrias.html">Industrias</a></li>
-             <li><a href="Acerca de nosotros.html">Acerca de nosotros</a></li>
-             <li><a href="Contacto.html">Contacto</a></li>
-         </ul>
+      <div class="logo">
+        <p class="logoPrincipal"> tema <p>
+        <p class="logoSecundario"> Advisory Services </p>
+        </div>
+        <a class="botonHamb">
+           <span class="barra"></span>
+           <span class="barra"></span>
+           <span class="barra"></span>
+        </a>
+        <ul> 
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="Industrias.html">Industrias</a></li>
+            <li><a href="Acerca de nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
      </header>
 
      <main> 
          <h1 class="titulo">Conocé algunos de los sectores con los que más trabajamos</h1>
-         <div>
-         <section>
-            <img class="logo" src="img/servicios financieros.jpg" alt="" width="120px">
+         <div class="filas">
+         <section class="cajas">
+            <img class="icono" src="img/servicios financieros.jpg" alt="" width="120px">
             <p> <strong> Servicios Financieros </strong></p>
          </section>
-         <section>
-            <img class="logo" src="img/gobierno y sec publico.jpg" alt="" width="120px">
+         <section class="cajas">
+            <img class="icono" src="img/gobierno y sec publico.jpg" alt="" width="120px">
             <p> <strong> Gobierno y sector público</strong></p>
          </section>
-         <section>
-            <img class="logo" src="img/forestacion y empaquetado.jpg" alt="" width="120px">
+         <section class="cajas">
+            <img class="icono" src="img/forestacion y empaquetado.jpg" alt="" width="120px">
             <p> <strong>Forestación y empaquetado</strong></p>
          </section>
          </div>
 
-         <div>
-         <section>
-          <img class="logo" src="img/energia mineria.jpg" alt="" width="120px">
+         <div class="filas">
+         <section class="cajas">
+          <img class="icono" src="img/energia mineria.jpg" alt="" width="120px">
           <p> <strong>Energía minería y servicios públicos</strong></p>
        </section>
-       <section>
-        <img class="logo" src="img/tecnologia-de-la-informacion-2.jpg" alt="" width="120px">
-          <p> <strong>Tecnologías de la información y telecomunicaciones</strong></p>
+       <section class="cajas">
+        <img class="icono" src="img/tecnologia-de-la-informacion-2.jpg" alt="" width="120px">
+          <p> <strong>Tecnologías de la información</strong></p>
        </section>
-       <section>
-        <img class="logo" src="img/retail y consumo.jpg" alt="" width="120px">
+       <section class="cajas">
+        <img class="icono" src="img/retail y consumo.jpg" alt="" width="120px">
           <p> <strong>Retail y consumo masivo</strong></p>
        </section>
        </div>
