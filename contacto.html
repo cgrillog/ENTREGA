@@ -2,208 +2,215 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-        <style>
-        * body{
-            margin: 0;
-            padding: 0;
-            background-color: #e8e8f8;
-         }
-         header {
-     display: flex;
-     flex-direction: row;
-     background-color: #000000;
-     align-items: center;
-     justify-content: flex-end;
-     color: rgb(255, 255, 255);
-     font-family: arial;
-     height: 40px;
-     padding: 10px;          
- }
- .logo {
-   margin-right: auto;
-   display: flex;
-   flex-direction: column;
-   height: 40px;
-   line-height: 0px;
-   padding: 0px;
-   border: 0px;
-   font-family: serif;
-   width: 200px;
- }
- .logoPrincipal {
-  font-size: xx-large;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
- }
- .logoSecundario {
-   margin-bottom: 0px;
-   margin: 0;
-   padding: 0;
-  }
- header ul {
-     display: flex;
-     gap: 10px;
-     list-style: none;         
- }
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <style>
+    * body {
+      margin: 0;
+      padding: 0;
+      background-color: #e8e8f8;
+    }
 
- header ul li {
-    text-align: center;
- }
+    header {
+      display: flex;
+      flex-direction: row;
+      background-color: #000000;
+      align-items: center;
+      justify-content: flex-end;
+      color: rgb(255, 255, 255);
+      font-family: arial;
+      height: 40px;
+      padding: 10px;
+    }
 
- header ul li a {
-    
-     display: block;
-     padding: 5px;
-     font-size: 12px;
-     color: rgb(255, 255, 255);
-     text-decoration: none;
-     transition: all 0.6s;
-     border-radius: 8px;
- }
+    .logo {
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      height: 40px;
+      line-height: 0px;
+      padding: 0px;
+      border: 0px;
+      font-family: serif;
+      width: 200px;
+    }
 
- header ul li a:hover {
-   background-color: rgb(255, 255, 255);
-   color: rgb(7, 7, 7);
- }
- .botonHamb{
-   position: absolute;
-   top: 20px;
-   right: 20px;
-   display: none;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 30px;
-   height: 20px;
- }
- .botonHamb .barra{
-   height: 3px;
-   width: 100%;
-   background-color: #fafafa;
-   border-radius: 10px;
- }
-         
-         main{
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
+    .logoPrincipal {
+      font-size: xx-large;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
 
-         }
+    .logoSecundario {
+      margin-bottom: 0px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header ul {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+    }
+
+    header ul li {
+      text-align: center;
+    }
+
+    header ul li a {
+
+      display: block;
+      padding: 5px;
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      transition: all 0.6s;
+      border-radius: 8px;
+    }
+
+    header ul li a:hover {
+      background-color: rgb(255, 255, 255);
+      color: rgb(7, 7, 7);
+    }
+
+    .botonHamb {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+    }
+
+    .botonHamb .barra {
+      height: 3px;
+      width: 100%;
+      background-color: #fafafa;
+      border-radius: 10px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+    }
 
 
-         form div{
-          margin-top: 10px;
-          display: flex;
-          flex-direction: row;
-         }
+    form div {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+    }
 
-         div label {
-          margin-right: 10px;
-          
-         }
+    div label {
+      margin-right: 10px;
 
-         input{
-          width: 300px;
-          margin-left: auto;
-         }
+    }
 
-         .box{
-          height: 100px;
-         }
+    input {
+      width: 300px;
+      margin-left: auto;
+    }
 
-         .boton{
-          margin-top: 30px;
-          margin-left: 130px;
-          background-color: rgb(220, 66, 97);
-          padding: 10px;
-          border-radius: 10px;
-          color: #ffffff;
+    .box {
+      height: 100px;
+    }
 
-         }
+    .boton {
+      margin-top: 30px;
+      margin-left: 130px;
+      background-color: rgb(220, 66, 97);
+      padding: 10px;
+      border-radius: 10px;
+      color: #ffffff;
 
-         .footer-basic {
-               padding:40px 0;
-               background-color:#ffffff;
-               color:#48494b;
-               margin-bottom: 0px;
-               height: 100px;
-          }
+    }
 
-.footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
-}
+    .footer-basic {
+      padding: 40px 0;
+      background-color: #ffffff;
+      color: #48494b;
+      margin-bottom: 0px;
+      height: 100px;
+    }
 
-.footer-basic .social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:inherit;
-  opacity:0.75;
-}
+    .footer-basic .social {
+      text-align: center;
+      padding-bottom: 25px;
+    }
 
-.footer-basic .social > a:hover {
-  opacity:0.9;
-}
+    .footer-basic .social>a {
+      font-size: 24px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      margin: 0 8px;
+      color: inherit;
+      opacity: 0.75;
+    }
 
-.footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
-}
-         
-    </style>
+    .footer-basic .social>a:hover {
+      opacity: 0.9;
+    }
+
+    .footer-basic .copyright {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 
 <body>
 
   <header class="topnav">
     <div class="logo">
-    <p class="logoPrincipal"> tema <p>
-    <p class="logoSecundario"> Advisory Services </p>
+      <p class="logoPrincipal"> tema
+      <p>
+      <p class="logoSecundario"> Advisory Services </p>
     </div>
     <a class="botonHamb">
-       <span class="barra"></span>
-       <span class="barra"></span>
-       <span class="barra"></span>
+      <span class="barra"></span>
+      <span class="barra"></span>
+      <span class="barra"></span>
     </a>
-    <ul> 
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="Servicios.html">Servicios</a></li>
-        <li><a href="Industrias.html">Industrias</a></li>
-        <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
-        <li><a href="Contacto.html">Contacto</a></li>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="industrias.html">Industrias</a></li>
+      <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
     </ul>
-</header>
+  </header>
 
-     <main> 
-      <h1>
-        CONTACTO
-      </h1>
+  <main>
+    <h1>
+      CONTACTO
+    </h1>
 
-      <form>
-        <div>
-          <label for="fname">Nombre completo</label>
-          <input type="text" id="fname" name="fname">
-        </div>
-        <div>
+    <form>
+      <div>
+        <label for="fname">Nombre completo</label>
+        <input type="text" id="fname" name="fname">
+      </div>
+      <div>
         <label for="fname">Correo</label>
         <input type="text" id="fname" name="fname">
-        </div>
-        <div>
+      </div>
+      <div>
         <label for="fname">Telefono</label>
         <input type="text" id="fname" name="fname">
       </div>
@@ -212,21 +219,25 @@
         <input class="box" type="text" id="fname" name="fname">
       </div>
 
-      </form>
+    </form>
 
-<div class="boton">Enviar</div>
+    <div class="boton">Enviar</div>
 
-      
 
-    </main>
-    <body>
-      <div class="footer-basic">
-          <footer>
-              <div class="social">
-                <a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-              <p class="copyright">Tema - Advisory Services © 2022</p>
-          </footer>
-      </div>
+
+  </main>
+
+  <body>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+              class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
+            href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <p class="copyright">Tema - Advisory Services © 2022</p>
+      </footer>
+    </div>
 
   </body>
 
