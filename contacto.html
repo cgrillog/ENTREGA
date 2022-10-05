@@ -11,46 +11,80 @@
             background-color: #e8e8f8;
          }
          header {
-             display: flex;
-             flex-direction: row;
-             align-items: center;
-             justify-content: flex-end;
-             background-color: rgb(0, 0, 0);
-             font-family: arial;
-             height: 40px;
-             padding: 10px;          
-         }
+     display: flex;
+     flex-direction: row;
+     background-color: #000000;
+     align-items: center;
+     justify-content: flex-end;
+     color: rgb(255, 255, 255);
+     font-family: arial;
+     height: 40px;
+     padding: 10px;          
+ }
+ .logo {
+   margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   height: 40px;
+   line-height: 0px;
+   padding: 0px;
+   border: 0px;
+   font-family: serif;
+   width: 200px;
+ }
+ .logoPrincipal {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+ }
+ .logoSecundario {
+   margin-bottom: 0px;
+   margin: 0;
+   padding: 0;
+  }
+ header ul {
+     display: flex;
+     gap: 10px;
+     list-style: none;         
+ }
 
-         header p {
-             margin-right: auto;
-         }
+ header ul li {
+    text-align: center;
+ }
 
-         header ul {
-             display: flex;
-             gap: 10px;
-             list-style: none;         
-         }
+ header ul li a {
+    
+     display: block;
+     padding: 5px;
+     font-size: 12px;
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     transition: all 0.6s;
+     border-radius: 8px;
+ }
 
-
-         header ul li {
-            text-align: center;
-         }
-
-         header ul li a {
-            
-             display: block;
-             padding: 5px;
-             font-size: 12px;
-             color: rgb(255, 255, 255);
-             text-decoration: none;
-             transition: all 0.6s;
-             border-radius: 8px;
-         }
-
-         header ul li a:hover {
-           background-color: rgb(255, 255, 255);
-           color: rgb(7, 7, 7);
-         }
+ header ul li a:hover {
+   background-color: rgb(255, 255, 255);
+   color: rgb(7, 7, 7);
+ }
+ .botonHamb{
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 30px;
+   height: 20px;
+ }
+ .botonHamb .barra{
+   height: 3px;
+   width: 100%;
+   background-color: #fafafa;
+   border-radius: 10px;
+ }
+         
          main{
             display: flex;
             flex-direction: column;
@@ -136,16 +170,24 @@
 
 <body>
 
-     <header class="topnav">
-         <p> <img height="100px" src=https://media-exp1.licdn.com/dms/image/C4E0BAQEXyKoIOlbqGQ/company-logo_200_200/0/1538360888029?e=2147483647&v=beta&t=6smKuiXa9r6rYe0UXyKQ2Gg8ztMp1JuFr9rnBo0KuB0><p>
-         <ul> 
-             <li><a href="Index.html">Inicio</a></li>
-             <li><a href="Servicios.html">Servicios</a></li>
-             <li><a href="Industrias.html">Industrias</a></li>
-             <li><a href="Acerca de nosotros.html">Acerca de nosotros</a></li>
-             <li><a href="Contacto.html">Contacto</a></li>
-         </ul>
-     </header>
+  <header class="topnav">
+    <div class="logo">
+    <p class="logoPrincipal"> tema <p>
+    <p class="logoSecundario"> Advisory Services </p>
+    </div>
+    <a class="botonHamb">
+       <span class="barra"></span>
+       <span class="barra"></span>
+       <span class="barra"></span>
+    </a>
+    <ul> 
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Industrias.html">Industrias</a></li>
+        <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+</header>
 
      <main> 
       <h1>
