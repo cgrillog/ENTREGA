@@ -1,0 +1,477 @@
+/* line 1, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+* body {
+  margin: 0;
+  padding: 0;
+  background-color: #c5c5c5;
+  font-family: 'EYInterstate',sans-serif;
+}
+
+/* line 9, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  height: 40px;
+  padding: 10px;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.logo {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+  padding: 0px;
+  border: 0px;
+  margin-left: 10px;
+  font-family: serif;
+}
+
+/* line 32, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.logoPrincipal {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 40, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.logoSecundario {
+  margin-bottom: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 47, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+header ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+/* line 53, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+header ul li {
+  text-align: center;
+}
+
+/* line 57, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+header ul li a {
+  display: block;
+  padding: 5px;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.6s;
+  border-radius: 8px;
+}
+
+/* line 68, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+header ul li a:hover {
+  background-color: white;
+  color: #070707;
+}
+
+/* line 73, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.botonHamb {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+/* line 84, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.botonHamb .barra {
+  height: 3px;
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+/* line 91, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.centrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 97, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.altoAncho {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-items: center;
+}
+
+/* line 102, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.typewriter {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing 4s steps(40, end), blink-caret 1.25s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* line 125, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.icono {
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+/* line 130, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.filas {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cajasServicios {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #000000;
+  padding: 10px;
+  background-color: rgba(183, 177, 232, 0.66);
+}
+
+.fotoServ {
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+#carousel {
+  width: 94%;
+  margin-left: 3%;
+}
+
+#carousel div {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carousel img {
+  height: 600px;
+}
+
+/* line 135, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.cajas {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 20px;
+  align-items: center;
+  border: 2px solid #000000;
+  padding: 10px;
+  background-color: #b7b1e8;
+  width: 400px;
+}
+
+.mainCont {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.filaCont {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  margin-right: 10px;
+}
+
+.input {
+  width: 300px;
+  margin-left: auto;
+}
+
+.box {
+  height: 100px;
+}
+
+.boton {
+  margin-top: 30px;
+  margin-left: 130px;
+  background-color: #dc4261;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* line 148, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.servicios {
+  position: absolute;
+  color: white;
+  font-size: xx-large;
+  border-radius: 8px;
+  padding: 5px;
+  top: 48%;
+}
+
+/* line 160, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.serviciosBoton {
+  position: absolute;
+  color: white;
+  font-size: x-large;
+  border-radius: 8px;
+  border: 2px solid #fafafa;
+  background-color: rgba(0, 0, 0, 0.123);
+  padding: 5px;
+  top: 52%;
+  cursor: pointer;
+}
+
+/* line 172, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.serviciosBoton:hover {
+  transition-duration: 0.6s;
+  background-color: rgba(0, 0, 0, 0.523);
+}
+
+/* line 179, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.ytplayer {
+  pointer-events: none;
+  filter: brightness(70%);
+}
+
+/* line 183, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+#novedades {
+  color: black;
+  font-family: 'EYInterstate',sans-serif;
+  top: 10px;
+}
+
+/* line 189, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+main h1 {
+  margin-left: 75px;
+  font-weight: 200;
+}
+
+/* line 193, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+/* line 197, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.imagNov {
+  display: flex;
+  border: #000000;
+  border-color: #000000;
+  padding: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* line 206, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.nov {
+  height: 300px;
+  padding: 20px;
+  transition: 1s;
+  border-radius: 20px;
+}
+
+/* line 212, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.nov:hover {
+  height: 310px;
+  transition: 1s;
+}
+
+.acercaDeNos {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sectionADN {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  margin-top: 20px;
+  justify-content: left;
+}
+
+.foto {
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+/* line 217, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.titulo {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* line 222, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #48494b;
+}
+
+/* line 228, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+/* line 233, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+/* line 247, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+/* line 251, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  /* line 262, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  header ul {
+    display: none;
+  }
+  /* line 265, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  .responsive {
+    display: flex;
+  }
+  /* line 269, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  header {
+    height: auto;
+  }
+  /* line 273, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  header ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    line-height: 10px;
+    gap: 2px;
+  }
+  /* line 282, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  .botonHamb {
+    display: flex;
+    align-items: flex-start;
+  }
+  /* line 287, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  .topnav {
+    flex-direction: column;
+  }
+  #padre {
+    display: flex;
+    justify-items: center;
+  }
+  /* line 292, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  .servicios,
+  .serviciosBoton {
+    font-size: small;
+    max-width: 241px;
+  }
+  .servicios {
+    top: 46%;
+  }
+  /* line 310, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  main h1 {
+    font-size: x-large;
+    margin-left: 0px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+  /* line 318, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  .altoAncho {
+    height: 300px;
+  }
+  /* line 322, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  .filas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* line 329, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  .cajas {
+    width: 90%;
+    font-size: 10px;
+    padding: 0%;
+    border: 0%;
+    margin: 5%;
+  }
+  /* line 338, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  .icono {
+    height: 60px;
+    width: 80px;
+    padding: 10px;
+    padding-right: 0;
+    border-radius: 10px;
+  }
+  /* line 346, ../../../../../../../../../../../../../Users/carlosgrillo/Desktop/CoderHouse/DESAROLLO WEB/ENTREGA/scss/estilos.scss */
+  .show {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

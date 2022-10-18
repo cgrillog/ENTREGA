@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/index.css" />
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
    <meta charset="UTF-8">
-   <title>industrias</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Index</title>
+   <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
 <body>
 
    <header class="topnav">
       <div class="logo">
-         <p class="logoPrincipal"> tema
-         <p>
-         <p class="logoSecundario"> Advisory Services </p>
+          <p class="logoPrincipal"> estudio </p>
+          <p class="logoSecundario"> Advisory Services </p>
       </div>
-      <a class="botonHamb">
-         <span class="barra"></span>
-         <span class="barra"></span>
-         <span class="barra"></span>
-      </a>
-      <ul>
-         <li><a href="index.html">Inicio</a></li>
-         <li><a href="servicios.html">Servicios</a></li>
-         <li><a href="industrias.html">Industrias</a></li>
-         <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
-         <li><a href="contacto.html">Contacto</a></li>
+      <div class="botonHamb" onclick="myFunction()">
+          <span class="barra"></span>
+          <span class="barra"></span>
+          <span class="barra"></span>
+      </div>
+      <ul class="paginas" id="myTopnav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="industrias.html">Industrias</a></li>
+          <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
       </ul>
-   </header>
+  </header>
 
    <main>
       <h1 class="titulo">Conocé algunos de los sectores con los que más trabajamos</h1>
@@ -81,5 +80,16 @@
 
 
 </body>
+
+<script>
+   function myFunction() {
+       var x = document.getElementById("myTopnav");
+       if (x.className === "paginas") {
+           x.className += " responsive";
+       } else {
+           x.className = "paginas";
+       }
+   }
+</script>
 
 </html>
