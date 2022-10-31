@@ -2,61 +2,64 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Acerca de Nosotros</title>
-   <link rel="stylesheet" href="css/estilos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de Nosotros</title>
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
 <body>
 
   <header class="topnav">
     <div class="logo">
-        <p class="logoPrincipal"> estudio </p>
-        <p class="logoSecundario"> Advisory Services </p>
+      <p class="logoPrincipal"> estudio </p>
+      <p class="logoSecundario"> Advisory Services </p>
     </div>
     <div class="botonHamb" onclick="myFunction()">
-        <span class="barra"></span>
-        <span class="barra"></span>
-        <span class="barra"></span>
+      <span class="barra"></span>
+      <span class="barra"></span>
+      <span class="barra"></span>
     </div>
     <ul class="paginas" id="myTopnav">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="industrias.html">Industrias</a></li>
-        <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="industrias.html">Industrias</a></li>
+      <li><a href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
     </ul>
-</header>
+  </header>
 
-  <main class="mainCont">
-    <h1>
-      CONTACTO
-    </h1>
+  <main>
+    <div id="padre-cont" class="centrar-cont altoAncho-cont">
+      <img class="fondo" src="img/cont.jpeg" width="100%" height="100%">
+      <h1 class="titulo-cont">
+        CONTACTO
+      </h1>
 
-    <form>
-      <div class="filaCont">
-        <label class="label" for="fname">Nombre completo</label>
-        <input class="input" type="text" id="fname" name="fname">
+      <div class="container">
+        <form>
+          <label for="fname">First Name</label>
+          <input class="traslucido" type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input class="traslucido" type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select class="traslucido" id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea class="traslucido subject" id="subject" name="subject" placeholder="Write something.."></textarea>
+<div class="center">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
       </div>
-      <div class="filaCont">
-        <label class="label" for="fname">Correo</label>
-        <input class="input" type="text" id="fname" name="fname">
-      </div>
-      <div class="filaCont">
-        <label class="label" for="fname">Telefono</label>
-        <input class="input" type="text" id="fname" name="fname">
-      </div>
-      <div class="filaCont">
-        <label class="label" for="fname">Mensaje</label>
-        <input class="box input" type="text" id="fname" name="fname">
-      </div>
 
-    </form>
-
-    <div class="boton filaCont">Enviar</div>
-
-
+    </div>
 
   </main>
 
@@ -79,12 +82,12 @@
 
 <script>
   function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "paginas") {
-          x.className += " responsive";
-      } else {
-          x.className = "paginas";
-      }
+    var x = document.getElementById("myTopnav");
+    if (x.className === "paginas") {
+      x.className += " responsive";
+    } else {
+      x.className = "paginas";
+    }
   }
 </script>
 
