@@ -3,191 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Index</title>
-  <style>
-    * body {
-      margin: 0;
-      padding: 0;
-      background-color: #e8e8f8;
-    }
-
-    header {
-      display: flex;
-      flex-direction: row;
-      background-color: #000000;
-      align-items: center;
-      justify-content: flex-end;
-      color: rgb(255, 255, 255);
-      font-family: arial;
-      height: 40px;
-      padding: 10px;
-    }
-
-    .logo {
-      margin-right: auto;
-      display: flex;
-      flex-direction: column;
-      height: 40px;
-      line-height: 0px;
-      padding: 0px;
-      border: 0px;
-      font-family: serif;
-      width: 200px;
-    }
-
-    .logoPrincipal {
-      font-size: xx-large;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-    }
-
-    .logoSecundario {
-      margin-bottom: 0px;
-      margin: 0;
-      padding: 0;
-    }
-
-    header ul {
-      display: flex;
-      gap: 10px;
-      list-style: none;
-    }
-
-    header ul li {
-      text-align: center;
-    }
-
-    header ul li a {
-
-      display: block;
-      padding: 5px;
-      font-size: 12px;
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      transition: all 0.6s;
-      border-radius: 8px;
-    }
-
-    header ul li a:hover {
-      background-color: rgb(255, 255, 255);
-      color: rgb(7, 7, 7);
-    }
-
-    .botonHamb {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      display: none;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30px;
-      height: 20px;
-    }
-
-    .botonHamb .barra {
-      height: 3px;
-      width: 100%;
-      background-color: #fafafa;
-      border-radius: 10px;
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-
-    }
-
-
-    form div {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: row;
-    }
-
-    div label {
-      margin-right: 10px;
-
-    }
-
-    input {
-      width: 300px;
-      margin-left: auto;
-    }
-
-    .box {
-      height: 100px;
-    }
-
-    .boton {
-      margin-top: 30px;
-      margin-left: 130px;
-      background-color: rgb(220, 66, 97);
-      padding: 10px;
-      border-radius: 10px;
-      color: #ffffff;
-
-    }
-
-    .footer-basic {
-      padding: 40px 0;
-      background-color: #ffffff;
-      color: #48494b;
-      margin-bottom: 0px;
-      height: 100px;
-    }
-
-    .footer-basic .social {
-      text-align: center;
-      padding-bottom: 25px;
-    }
-
-    .footer-basic .social>a {
-      font-size: 24px;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      display: inline-block;
-      text-align: center;
-      border-radius: 50%;
-      border: 1px solid #ccc;
-      margin: 0 8px;
-      color: inherit;
-      opacity: 0.75;
-    }
-
-    .footer-basic .social>a:hover {
-      opacity: 0.9;
-    }
-
-    .footer-basic .copyright {
-      margin-top: 15px;
-      text-align: center;
-      font-size: 13px;
-      color: #aaa;
-      margin-bottom: 0;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de Nosotros</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
   <header class="topnav">
     <div class="logo">
-      <p class="logoPrincipal"> tema
-      <p>
+      <p class="logoPrincipal"> estudio </p>
       <p class="logoSecundario"> Advisory Services </p>
     </div>
-    <a class="botonHamb">
+    <div class="botonHamb" onclick="myFunction()">
       <span class="barra"></span>
       <span class="barra"></span>
       <span class="barra"></span>
-    </a>
-    <ul>
+    </div>
+    <ul class="paginas" id="myTopnav">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="servicios.html">Servicios</a></li>
       <li><a href="industrias.html">Industrias</a></li>
@@ -197,51 +31,66 @@
   </header>
 
   <main>
-    <h1>
-      CONTACTO
-    </h1>
+    <div id="padre-cont" class="centrar-cont altoAncho-cont">
+      <img class="fondo" src="img/cont.jpeg" width="100%" height="100%">
+      <h1 class="titulo-cont">
+        CONTACTO
+      </h1>
 
-    <form>
-      <div>
-        <label for="fname">Nombre completo</label>
-        <input type="text" id="fname" name="fname">
+      <div class="container">
+        <form>
+          <label for="nombre">Nombre y apellido</label>
+          <input class="traslucido" type="text" id="fname" name="firstname" placeholder="Tu nombre y apellido..">
+
+          <label for="lname">Correo electronico</label>
+          <input class="traslucido" type="text" id="lname" name="lastname" placeholder="Correo electronico">
+
+          <label for="country">País</label>
+          <select class="traslucido" id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <label for="subject">Mensaje</label>
+          <textarea class="traslucido subject" id="subject" name="subject" placeholder="Escriba el mensaje.."></textarea>
+<div class="center">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
       </div>
-      <div>
-        <label for="fname">Correo</label>
-        <input type="text" id="fname" name="fname">
-      </div>
-      <div>
-        <label for="fname">Telefono</label>
-        <input type="text" id="fname" name="fname">
-      </div>
-      <div>
-        <label for="fname">Mensaje</label>
-        <input class="box" type="text" id="fname" name="fname">
-      </div>
 
-    </form>
-
-    <div class="boton">Enviar</div>
-
-
+    </div>
 
   </main>
 
   <body>
     <div class="footer-basic">
       <footer>
-        <div class="social">
-          <a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
-              class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
-            href="#"><i class="icon ion-social-facebook"></i></a>
-        </div>
-        <p class="copyright">Tema - Advisory Services © 2022</p>
+          <div class="social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-instagram"></a>
+          </div>
+          <p class="copyright">Tema - Advisory Services © 2022</p>
       </footer>
-    </div>
+  </div>
 
   </body>
 
 
 </body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "paginas") {
+      x.className += " responsive";
+    } else {
+      x.className = "paginas";
+    }
+  }
+</script>
 
 </html>
